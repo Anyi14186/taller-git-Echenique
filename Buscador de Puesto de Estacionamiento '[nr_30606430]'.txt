@@ -1,0 +1,25 @@
+﻿BUSCADOR DE PUESTO DE ESTACIONAMIENTO
+
+
+{
+VAR int [5][4] puesto;
+VAR int fila;
+VAR int columna;
+READ fila;
+READ columna;
+        
+        for (i=0; i<tam (4); i=i+1)
+                VAR int j=0:
+                for (j=0; j<tam (3); j=j+1)
+                
+                if (fila >=0 and fila <tam (puesto)) and (columna >=0 and columna< tam (puesto))
+then {
+if (puesto [fila] [columna]==0) then {
+print (“0 Éxito: El puesto existe, esta libre y el usuario puede estacionar”)
+} else {
+              print (“1 El puesto existe pero está ocupado”)
+}
+  else {
+            print (“-1 Error: Las coordenadas ingresadas no son válidas (fuera de rango)”)
+ }
+                            }
